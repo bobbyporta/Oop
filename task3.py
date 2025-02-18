@@ -1,12 +1,12 @@
 class BankAccount:
     def __init__(self, account_number, owner, balance=0):
-        # Constructor to initialize the account attributes
+        
         self.account_number = account_number
         self.owner = owner
         self.balance = balance
     
     def deposit(self, amount):
-        # Method to deposit money into the account
+     
         if amount > 0:
             self.balance += amount
             print(f"Deposited ₱{amount}. New balance: ₱{self.balance}")
@@ -14,7 +14,7 @@ class BankAccount:
             print("Deposit amount must be greater than zero.")
     
     def withdraw(self, amount):
-        # Method to withdraw money from the account
+        
         if amount <= self.balance:
             self.balance -= amount
             print(f"Withdrew ₱{amount}. New balance: ₱{self.balance}")
@@ -22,14 +22,14 @@ class BankAccount:
             print("Insufficient funds for this withdrawal.")
     
     def display_balance(self):
-        # Method to display the current balance
+        
         print(f"Account balance: ₱{self.balance}")
 
-# Create a bank account
-account = BankAccount("123456789", "John Doe", 500)
 
-# Perform transactions
-account.deposit(200)        # Depositing ₱200
-account.withdraw(100)       # Withdrawing ₱100
-account.withdraw(700)       # Trying to withdraw more than the balance
-account.display_balance()   # Displaying the balance
+account = BankAccount("123456789", "Bobby Porta", 500)
+
+
+account.deposit(200)       
+account.withdraw(100)      
+account.withdraw(700)      
+account.display_balance()   
