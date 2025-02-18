@@ -31,5 +31,5 @@ if __name__ == "__main__":
     student2 = Students("John", 20, "Bachelor of Science in Computer Science")
     student2.introduce2()
     
-    student3 = Students("Issi", 20, "BEED")
+    student3 = Students("Erika", 20, "Bachelor of Elementary Education")
     student3.introduce3()
